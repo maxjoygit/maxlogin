@@ -1,14 +1,6 @@
-import express from "express";
+const express =  require("express");
 
-import path from "path";
-
-import { fileURLToPath } from 'url';
-
-import { dirname } from 'path';
-
-const __filename = fileURLToPath(import.meta.url);
-
-const __dirname = dirname(__filename);
+const path =  require("path");
 
 const app = new express();
 
@@ -18,7 +10,7 @@ app.set('view engine', 'ejs');
 
 app.set('views', path.join(__dirname, '/app/views'));
 
-import { http } from "@serverless/cloud";
+const { http } =  require("@serverless/cloud");
 
 http.use(app);
 

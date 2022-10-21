@@ -1,22 +1,24 @@
 {
-  "name": "js-api",
+  "name": "maxlogin",
   "version": "1.0.0",
   "description": "Serverless Cloud JavaScript API template",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "start": "cloud",
     "test": "cloud test"
   },
+  "devDependencies": {
+    "@serverless/cloud": "^2.10.13"
+  },
+  "serverless": {
+    "app": "maxlogin",
+    "org": "maxjoynxt"
+  },
   "dependencies": {
-    "@serverless/cloud": "^2.11.0",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "jsonwebtoken": "^8.5.1",
-    "mysql2": "^2.3.3"
-  },
-  "serverless": {
-    "app": "maxlogin"
+    "mysql2": "^2.3.3",
+    "path": "^0.12.7"
   }
 }
